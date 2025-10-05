@@ -4,14 +4,14 @@ import { Cards } from "@/lib/directus";
 import { useEffect, useState } from "react";
 
 const useCards = (params: string) => {
-  const [cards, setCards] = useState<Cards[]>([]);
+  const [card, setCard] = useState<Cards>();
 
   useEffect(() => {
     const fetchCards = async () => {
       try {
         const result = await getCards(params);
         console.log("Fetched cards:", result);
-        setCards(result);
+        setCard(result);
       } catch (err) {
         console.error("An error occurred during cards retrieval:", err);
       }
@@ -21,7 +21,7 @@ const useCards = (params: string) => {
   }, [params]);
 
   return {
-    cards,
+    card,
   };
 };
 
