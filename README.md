@@ -1,8 +1,17 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Card Frontend - Next.js Application
 
-## Getting Started
+Frontend per l'applicazione di gestione carte, connesso a Directus CMS.
 
-First, run the development server:
+## Stack Tecnologico
+
+- **Next.js 15** con TypeScript
+- **Tailwind CSS** per lo styling  
+- **Directus SDK** per la connessione al backend
+- **React 19**
+
+## Sviluppo Locale
+
+First, install dependencies and run the development server:
 
 ```bash
 npm run dev
